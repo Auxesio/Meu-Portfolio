@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+
 body {
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
   color: #505692;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .offset:before {
@@ -132,6 +137,15 @@ h3.heading {
   color: #1ebba3;
 }
 
+.fas, .fab {
+  color: #1ebba3;
+}
+
+.figuraContato {
+  color: white!important;
+}
+
+
 .beneficios h3 {
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -221,6 +235,11 @@ hr.socket {
 /*---Media Querie ---*/
 
 @media (max-width: 767px) {
+  
+  [data-aos] {
+    transform: none;
+  }
+
   .introdução h1 {
     font-size: 2.3rem;
     letter-spacing: .15rem;
@@ -248,6 +267,17 @@ hr.socket {
   }
 
 }
+
+/*--- ANIMAÇÕES ---*/
+@keyframes moverDireita {
+  from {left: -200px;}
+  to {left: 0px;}
+}
+
+.animado {
+  animation: moverDireita 2s;
+}
+
 
 
 /*============ BOOTSTRAP BREAK POINTS:
